@@ -1,0 +1,85 @@
+.right_sidebar_container {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 5px 2px 3px 2px;
+  flex-direction: column;
+  align-content: center;
+}
+.right_sidebar_container > * {
+  width: 100%;
+  height: 100%;
+  color: #d9d9d9;
+}
+.notification {
+  box-sizing: border-box;
+  width: 100%;
+  height: 45%;
+  overflow-y: auto;
+}
+.income_container {
+  position: relative;
+  height: 20%;
+}
+.income_panel {
+  box-sizing: border-box;
+  height: 100%;
+  padding: 3px;
+}
+.total_worth_container {
+  height: 20%;
+}
+.total_work_panel {
+  box-sizing: border-box;
+  height: 100%;
+  padding: 3px;
+}
+.savings_container {
+  width: 100%;
+  height: 30%;
+}
+.savings_panel {
+  box-sizing: border-box;
+  height: 100%;
+  padding: 3px;
+}
+.alert_container {
+  width: 100%;
+  height: 25%;
+}
+.alert_panel {
+  box-sizing: border-box;
+  height: 100%;
+  padding: 3px;
+}
+.note {
+  padding-top: 10px;
+  width: 100%;
+  height: 55%;
+}
+.sidebar_notes_container {
+  -webkit-background-clip: border-box;
+  height: 100%;
+  width: 100%;
+}
+.sidebar_notes_boundary {
+  box-sizing: border-box;
+  width: 100%;
+  height: 85%;
+}
+.notes_inputbox {
+  box-sizing: border-box;
+  margin: 5px;
+  width: 98%;
+  height: 100%;
+  padding: 5px;
+  border-style: solid;
+  border-width: thin;
+  overflow-y: auto;
+}
+@media (max-width: 1260px) {
+  .right_sidebar_container {
+    display: none;
+  }
+}

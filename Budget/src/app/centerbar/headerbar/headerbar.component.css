@@ -1,0 +1,22 @@
+.header-container {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+}
+.title_block {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.title {
+  /* background-color: black; */
+  padding-left: 10px;
+  background-image: linear-gradient(to right, #d9d9d9, #296e01);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-size: 40px;
+}

@@ -1,0 +1,141 @@
+.sub-header {
+  font-size: 1.1rem;
+  color: black;
+}
+.left_sidebar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+/* Sub-Section: Profile Block */
+.profile_block {
+  box-sizing: border-box;
+  padding: 10px 8px 4px 4px;
+  /* background-color: black; */
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.profile_name {
+  color: #d9d9d9;
+  text-align: right;
+}
+.profile_image_block {
+  width: 30%;
+  background-color: #d9d9d9;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+/* Sub-Section: Navigation */
+.sidebar_header {
+  font-size: 1.1rem;
+  color: #d9d9d9;
+  border-bottom-style: double;
+  margin-bottom: 1rem;
+  margin-right: 5px;
+  margin-left: 5px;
+  padding: 0.4rem;
+}
+.nav_section {
+  display: flex;
+}
+.nav_item {
+  /* background-color: blue; */
+  width: 100%;
+  height: 3rem;
+  transition: all 0.3s ease-in;
+  box-sizing: border-box;
+  display: flex;
+  padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+}
+.nav_item:hover {
+  border-bottom: 3px solid #3dff2e;
+  width: 100%;
+}
+.nav_icon_box {
+  min-width: 30px;
+  width: 50px;
+  height: 100%;
+  /* background-color: black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav_link_box {
+  height: 100%;
+  width: 100%;
+  /* background-color: red; */
+}
+.nav_link {
+  color: #d9d9d9;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+}
+.nav_link:hover {
+  color: black;
+}
+.quick_section {
+  display: flex;
+  height: calc;
+  color: #d9d9d9;
+}
+.quick_item {
+  height: 10px;
+  display: flex;
+  flex-direction: row;
+  padding-left: 5%;
+}
+.drop_field {
+  height: 0.95rem;
+}
+.drop_input {
+  background-color: #828282;
+  color: #d9d9d9;
+}
+
+@media (max-width: 1260px) {
+  .layout_container {
+    display: grid;
+    grid-template-columns: 10vw 90vw;
+    grid-template-rows: 100vh;
+    grid-template-areas: "left_sidebar centerbar";
+  }
+  .profile_block {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .profile_image_block {
+    margin: 0;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+  }
+  .profile_name_box {
+    display: none;
+  }
+  .sidebar_header_box {
+    display: none;
+  }
+  .nav_item {
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+  }
+  .nav_link_box {
+    display: none;
+  }
+  .quick_section {
+    display: none;
+  }
+}
