@@ -8,6 +8,8 @@ import { CenterbarComponent } from './centerbar/centerbar.component';
 import { HeaderbarComponent } from './centerbar/headerbar/headerbar.component';
 import { RightSidebarComponent } from './right-sidebar/right-sidebar.component';
 import { MainbodyComponent } from './centerbar/mainbody/mainbody.component';
+import { IonicModule } from '@ionic/angular';
+import { ZippyComponent } from './left-sidebar/zippy/zippy.component';
 
 
 @NgModule({
@@ -18,11 +20,13 @@ import { MainbodyComponent } from './centerbar/mainbody/mainbody.component';
     CenterbarComponent,
     HeaderbarComponent,
     RightSidebarComponent,
-    MainbodyComponent
+    MainbodyComponent,
+    ZippyComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    IonicModule
   ],
   providers: [],
   bootstrap: [AppComponent]

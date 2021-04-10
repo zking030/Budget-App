@@ -5,11 +5,10 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './left-sidebar.component.html',
   styleUrls: ['./left-sidebar.component.css']
 })
-export class LeftSidebarComponent implements OnInit {
+export class LeftSidebarComponent {
+  quickDropExpand: boolean = false;
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+onClick(){
+  this.quickDropExpand = !this.quickDropExpand
+}
 }
