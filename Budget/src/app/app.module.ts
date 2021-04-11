@@ -10,6 +10,7 @@ import { RightSidebarComponent } from './right-sidebar/right-sidebar.component';
 import { MainbodyComponent } from './centerbar/mainbody/mainbody.component';
 import { IonicModule } from '@ionic/angular';
 import { ZippyComponent } from './left-sidebar/zippy/zippy.component';
+import { ChartsComponent } from './charts/charts.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { ZippyComponent } from './left-sidebar/zippy/zippy.component';
     HeaderbarComponent,
     RightSidebarComponent,
     MainbodyComponent,
-    ZippyComponent
+    ZippyComponent,
+    ChartsComponent
   ],
   imports: [
     BrowserModule,

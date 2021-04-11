@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Budget';
+  viewSizeSmall:boolean | undefined;
+
+  checkProperties(){
+  if(window.innerWidth==1260){
+    this.viewSizeSmall=!this.viewSizeSmall
+    }
+  }
 }

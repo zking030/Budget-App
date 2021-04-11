@@ -4,12 +4,8 @@
   flex-direction: column;
   align-content: center;
 }
-.zippy-container {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  align-content: center;
+.zippy-heading {
+  cursor: pointer;
 }
 .zippy-body {
   overflow-y: auto;

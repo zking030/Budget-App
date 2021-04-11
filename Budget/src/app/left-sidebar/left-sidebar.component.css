@@ -132,12 +132,6 @@ input:focus {
 }
 
 @media (max-width: 1260px) {
-  .layout_container {
-    display: grid;
-    grid-template-columns: 10vw 90vw;
-    grid-template-rows: 100vh;
-    grid-template-areas: "left_sidebar centerbar";
-  }
   .profile_block {
     width: 100%;
     padding: 0;

@@ -8,8 +8,12 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ZippyComponent  {
   @Input('title') title: string | undefined;
   isExpanded:boolean = false;
-
+  isClicked:boolean = false;
+  
 toggle(){
   this.isExpanded= !this.isExpanded
+}
+onClickButton(){
+this.isClicked=!this.isClicked
 }
 }
