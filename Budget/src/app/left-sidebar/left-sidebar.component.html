@@ -19,7 +19,7 @@
           <ion-icon name="podium-outline"></ion-icon>
         </div>
         <div class="nav_link_box">
-          <a href="/index.html" class="nav_link">Dashboard</a>
+          <a routerLink="/dashboard" class="nav_link">Dashboard</a>
         </div>
       </li>
       <li class="nav_item">
@@ -35,7 +35,7 @@
           <ion-icon name="pie-chart-outline"></ion-icon>
         </div>
         <div class="nav_link_box">
-          <a href="/CAP.html" class="nav_link">CAP</a>
+          <a routerLink="cap" class="nav_link">CAP</a>
         </div>
       </li>
       <li class="nav_item">
@@ -66,99 +66,6 @@
   </nav>
   <div class="quick_section">
     <header class="sidebar_header">Quick</header>
-    <ul class="quick_list">
-      <zippy class="quick_item" title="Withdrawl Transaction">
-        <ul class="quick_drop_list">
-          <li class="quick_drop_item">
-            <input type="text" class="drop_input" />
-            <div class="drop_label">Date</div>
-          </li>
-          <li class="quick_drop_item">
-            <input type="text" class="drop_input" />
-            <div class="drop_label">Category</div>
-          </li>
-          <li class="quick_drop_item">
-            <input type="text" class="drop_input" />
-            <div class="drop_label">Description</div>
-          </li>
-          <li class="quick_drop_item">
-            <input type="text" class="drop_input" />
-            <div class="drop_label">Account</div>
-          </li>
-          <li class="quick_drop_item">
-            <input type="text" class="drop_input" />
-            <div class="drop_label">Amount</div>
-          </li>
-        </ul>
-      </zippy>
-      <zippy class="quick_item" title="Debit Deposit">
-        <ul class="quick_drop_list">
-          <li class="quick_drop_item">
-            <input type="text" class="drop_input" />
-            <div class="drop_label">Date</div>
-          </li>
-          <li class="quick_drop_item">
-            <input type="text" class="drop_input" />
-            <div class="drop_label">Category</div>
-          </li>
-          <li class="quick_drop_item">
-            <input type="text" class="drop_input" />
-            <div class="drop_label">Description</div>
-          </li>
-          <li class="quick_drop_item">
-            <input type="text" class="drop_input" />
-            <div class="drop_label">Account</div>
-          </li>
-          <li class="quick_drop_item">
-            <input type="text" class="drop_input" />
-            <div class="drop_label">Amount</div>
-          </li>
-        </ul>
-      </zippy>
-      <zippy class="quick_item" title="Transfer/Saving">
-        <ul class="quick_drop_list">
-          <li class="quick_drop_item">
-            <input type="text" class="drop_input" />
-            <div class="drop_label">Date</div>
-          </li>
-          <li class="quick_drop_item">
-            <input type="text" class="drop_input" />
-            <div class="drop_label">Category</div>
-          </li>
-          <li class="quick_drop_item">
-            <input type="text" class="drop_input" />
-            <div class="drop_label">Description</div>
-          </li>
-          <li class="quick_drop_item">
-            <input type="text" class="drop_input" />
-            <div class="drop_label">From Account</div>
-          </li>
-          <li class="quick_drop_item">
-            <input type="text" class="drop_input" />
-            <div class="drop_label">To Account</div>
-          </li>
-          <li class="quick_drop_item">
-            <input type="text" class="drop_input" />
-            <div class="drop_label">Amount</div>
-          </li>
-        </ul>
-      </zippy>
-      <zippy class="quick_item" title="CAP Category">
-        <ul class="quick_drop_list">
-          <li class="quick_drop_item">
-            <input type="text" class="drop_input" />
-            <div class="drop_label">CAP</div>
-          </li>
-          <li class="quick_drop_item">
-            <input type="text" class="drop_input" />
-            <div class="drop_label">Name</div>
-          </li>
-          <li class="quick_drop_item">
-            <input type="text" class="drop_input" />
-            <div class="drop_label">Amount</div>
-          </li>
-        </ul>
-      </zippy>
-    </ul>
+    <quick-section></quick-section>
   </div>
 </div>

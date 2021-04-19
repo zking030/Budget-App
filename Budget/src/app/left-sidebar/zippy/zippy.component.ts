@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'zippy',
@@ -7,11 +7,13 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ZippyComponent  {
   @Input('title') title: string | undefined;
+  @Output('outTitle') outTitle: string | undefined;
   isExpanded:boolean = false;
   isClicked:boolean = false;
   
 toggle(){
-  this.isExpanded= !this.isExpanded
+  this.isExpanded= !this.isExpanded;
+  this.outTitle=this.title;
 }
 onClickButton(){
 this.isClicked=!this.isClicked

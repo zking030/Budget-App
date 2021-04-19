@@ -15,6 +15,12 @@ ion-icon {
 .panel-txt-clr {
   background-color: #056644;
 }
+.card-clr1 {
+  background-color: #e2e1e1;
+}
+.card-clr2 {
+  background-color: #aeadad;
+}
 .panel {
   background-color: #d9d9d9;
   box-sizing: border-box;
@@ -23,6 +29,7 @@ ion-icon {
   z-index: 99;
   box-shadow: 2px 2px 5px 0 darkgray;
 }
+
 ::-webkit-scrollbar {
   width: 5px;
 }
@@ -37,4 +44,13 @@ ion-icon {
 .sub-header {
   font-size: 1.1rem;
   color: black;
+}
+.mainbody {
+  background-color: #13eba2;
+  width: 100%;
+  height: calc(100% - 60px);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }

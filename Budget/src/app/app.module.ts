@@ -11,6 +11,13 @@ import { MainbodyComponent } from './centerbar/mainbody/mainbody.component';
 import { IonicModule } from '@ionic/angular';
 import { ZippyComponent } from './left-sidebar/zippy/zippy.component';
 import { ChartsComponent } from './charts/charts.component';
+import { QuickSectionComponent } from './left-sidebar/quick-section/quick-section.component';
+import {ReactiveFormsModule } from '@angular/forms';
+import { DataService } from './data.service';
+import { CapComponent } from './centerbar/mainbody/cap/cap.component';
+import { RouterModule } from '@angular/router';
+import { DashboardComponent } from './centerbar/mainbody/dashboard/dashboard.component';
+import { ZippyCardComponent } from './centerbar/mainbody/cap/zippy-card/zippy-card.component';
 
 
 @NgModule({
@@ -23,14 +30,25 @@ import { ChartsComponent } from './charts/charts.component';
     RightSidebarComponent,
     MainbodyComponent,
     ZippyComponent,
-    ChartsComponent
+    ChartsComponent,
+    QuickSectionComponent,
+    CapComponent,
+    DashboardComponent,
+    ZippyCardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    IonicModule
+    IonicModule,
+    ReactiveFormsModule,
+    RouterModule.forRoot([
+      {path:'dashboard' , component: DashboardComponent},
+      {path:'cap' , component: CapComponent}
+    ])
   ],
-  providers: [],
+  providers: [
+    DataService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

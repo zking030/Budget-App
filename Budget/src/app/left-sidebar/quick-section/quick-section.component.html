@@ -1,0 +1,134 @@
+<ul class="quick_list">
+  <zippy
+    class="quick_item"
+    title="Withdrawl Transaction"
+    (click)="onClick('Withdrawl Transaction')"
+    *ngIf="!itemIsActive || activeItem == 'Withdrawl Transaction'"
+  >
+    <form [formGroup]="transForm" class="quick_drop_list">
+      <ul>
+        <li class="quick_drop_item">
+          <input formControlName="transDate" type="text" class="drop_input" />
+          <div class="drop_label">Date</div>
+        </li>
+        <li class="quick_drop_item">
+          <input formControlName="transCategory" type="" class="drop_input" />
+          <div class="drop_label">Category</div>
+        </li>
+        <li class="quick_drop_item">
+          <input type="text" class="drop_input" />
+          <div class="drop_label">Description</div>
+        </li>
+        <li class="quick_drop_item">
+          <input type="text" class="drop_input" />
+          <div class="drop_label">Account</div>
+        </li>
+        <li class="quick_drop_item">
+          <input type="text" class="drop_input" />
+          <div class="drop_label">Amount</div>
+        </li>
+      </ul>
+      <div class="btn-container">
+        <div class="button" type="submit">Submit</div>
+      </div>
+    </form>
+  </zippy>
+  <zippy
+    class="quick_item"
+    title="Debit Deposit"
+    (click)="onClick('Debit Deposit')"
+    *ngIf="!itemIsActive || activeItem == 'Debit Deposit'"
+  >
+    <form>
+      <ul class="quick_drop_list">
+        <li class="quick_drop_item">
+          <input type="text" class="drop_input" />
+          <div class="drop_label">Date</div>
+        </li>
+        <li class="quick_drop_item">
+          <input type="text" class="drop_input" />
+          <div class="drop_label">Category</div>
+        </li>
+        <li class="quick_drop_item">
+          <input type="text" class="drop_input" />
+          <div class="drop_label">Description</div>
+        </li>
+        <li class="quick_drop_item">
+          <input type="text" class="drop_input" />
+          <div class="drop_label">Account</div>
+        </li>
+        <li class="quick_drop_item">
+          <input type="text" class="drop_input" />
+          <div class="drop_label">Amount</div>
+        </li>
+      </ul>
+      <div class="btn-container">
+        <div class="button" type="submit">Submit</div>
+      </div>
+    </form>
+  </zippy>
+  <zippy
+    class="quick_item"
+    title="Transfer/Saving"
+    (click)="onClick('Transfer/Saving')"
+    *ngIf="!itemIsActive || activeItem == 'Transfer/Saving'"
+  >
+    <form>
+      <ul class="quick_drop_list">
+        <li class="quick_drop_item">
+          <input type="text" class="drop_input" />
+          <div class="drop_label">Date</div>
+        </li>
+        <li class="quick_drop_item">
+          <input type="text" class="drop_input" />
+          <div class="drop_label">Category</div>
+        </li>
+        <li class="quick_drop_item">
+          <input type="text" class="drop_input" />
+          <div class="drop_label">Description</div>
+        </li>
+        <li class="quick_drop_item">
+          <input type="text" class="drop_input" />
+          <div class="drop_label">From Account</div>
+        </li>
+        <li class="quick_drop_item">
+          <input type="text" class="drop_input" />
+          <div class="drop_label">To Account</div>
+        </li>
+        <li class="quick_drop_item">
+          <input type="text" class="drop_input" />
+          <div class="drop_label">Amount</div>
+        </li>
+      </ul>
+      <div class="btn-container">
+        <div class="button" type="submit">Submit</div>
+      </div>
+    </form>
+  </zippy>
+  <zippy
+    class="quick_item"
+    title="CAP Category"
+    (click)="onClick('CAP Category')"
+    *ngIf="!itemIsActive || activeItem == 'CAP Category'"
+  >
+    <form>
+      <ul class="quick_drop_list">
+        <li class="quick_drop_item">
+          <input type="text" class="drop_input" />
+          <div class="drop_label">CAP</div>
+        </li>
+        <li class="quick_drop_item">
+          <input type="text" class="drop_input" />
+          <div class="drop_label">Name</div>
+        </li>
+        <li class="quick_drop_item">
+          <input type="text" class="drop_input" />
+          <div class="drop_label">Amount</div>
+        </li>
+      </ul>
+      <div class="btn-container">
+        <div class="button" type="submit">Submit</div>
+      </div>
+    </form>
+  </zippy>
+</ul>

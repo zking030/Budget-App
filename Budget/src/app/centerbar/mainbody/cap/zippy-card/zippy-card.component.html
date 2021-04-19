@@ -1,0 +1,10 @@
+<div class="card_container" [class.right]="isRight">
+  <div class="card center_card card-clr1" (click)="onCardClick()">
+    <div class="card_header">{{ heading }}</div>
+    <div class="center_card_content"></div>
+  </div>
+  <div *ngIf="isExpanded" class="card sub_card card-clr2">
+    <div class="card_subheader">CAP Allocation</div>
+    <div class="subcard-content"></div>
+  </div>
+</div>

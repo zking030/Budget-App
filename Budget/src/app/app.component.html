@@ -1,12 +1,12 @@
 <body>
-  <div class="layout_grid">
+  <div class="{{ layout }}">
     <div class="left_sidebar_container">
       <left-sidebar></left-sidebar>
     </div>
     <div class="centerbar_container">
       <centerbar></centerbar>
     </div>
-    <div class="right_sidebar_container">
+    <div *ngIf="layout == 'layout_grid'" class="right_sidebar_container">
       <right-sidebar></right-sidebar>
     </div>
   </div>
